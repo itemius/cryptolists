@@ -1,0 +1,34 @@
+PODS:
+  - CocoaLumberjack (3.7.2):
+    - CocoaLumberjack/Core (= 3.7.2)
+  - CocoaLumberjack/Core (3.7.2)
+  - CollapsibleTableSectionViewController (2.0.1)
+  - Kingfisher (6.3.0)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - CollapsibleTableSectionViewController (~> 2.0.1)
+  - Kingfisher (~> 6.0)
+  - SVGKit
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+    - CollapsibleTableSectionViewController
+    - Kingfisher
+    - SVGKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
+  CollapsibleTableSectionViewController: 40d97d684d870044522a0dc29b128a6acaaa99df
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: b46c4caaa5150135b0c6fbdade1e0fde6a89f1cd
+
+COCOAPODS: 1.10.1

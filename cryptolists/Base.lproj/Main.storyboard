@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HkR-DM-Wnt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Wallets-->
+        <scene sceneID="gDg-NL-pPR">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="F3r-7i-Jp8" customClass="WalletsViewController" customModule="cryptolists" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LBr-Zv-RVK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cPP-72-Cyl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Eqy-Vd-GZ0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cPP-72-Cyl" firstAttribute="top" secondItem="Eqy-Vd-GZ0" secondAttribute="top" id="3S8-zB-v4M"/>
+                            <constraint firstItem="cPP-72-Cyl" firstAttribute="leading" secondItem="Eqy-Vd-GZ0" secondAttribute="leading" id="4On-md-zkC"/>
+                            <constraint firstItem="cPP-72-Cyl" firstAttribute="bottom" secondItem="Eqy-Vd-GZ0" secondAttribute="bottom" id="MYB-eu-RQ2"/>
+                            <constraint firstItem="cPP-72-Cyl" firstAttribute="trailing" secondItem="Eqy-Vd-GZ0" secondAttribute="trailing" id="S5Z-f2-VPc"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Wallets" image="WalletsIcon" id="2Xj-mh-LfA"/>
+                    <connections>
+                        <outlet property="tableView" destination="cPP-72-Cyl" id="xkw-Yy-jGd"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMg-5W-sh1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1624.6376811594205" y="396.42857142857139"/>
+        </scene>
+        <!--Assets-->
+        <scene sceneID="Goe-gY-crR">
+            <objects>
+                <viewController id="keb-6K-yPS" customClass="AssetsViewController" customModule="cryptolists" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ii1-Xd-V4p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4pt-d5-Ce7">
+                                <rect key="frame" x="0.0" y="99" width="414" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gj0-cI-D4b">
+                                <rect key="frame" x="5.5" y="50" width="403" height="32"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="Crypto"/>
+                                    <segment title="Metals"/>
+                                    <segment title="Fiats"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="keb-6K-yPS" eventType="valueChanged" id="zBe-t2-vWr"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x07-Fs-WZT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4pt-d5-Ce7" firstAttribute="trailing" secondItem="x07-Fs-WZT" secondAttribute="trailing" id="A8I-Xs-278"/>
+                            <constraint firstItem="gj0-cI-D4b" firstAttribute="centerX" secondItem="Ii1-Xd-V4p" secondAttribute="centerX" id="BSn-TN-AgL"/>
+                            <constraint firstItem="4pt-d5-Ce7" firstAttribute="top" secondItem="x07-Fs-WZT" secondAttribute="top" constant="55" id="Csd-9m-O6b"/>
+                            <constraint firstItem="4pt-d5-Ce7" firstAttribute="leading" secondItem="x07-Fs-WZT" secondAttribute="leading" id="QPx-9A-3de"/>
+                            <constraint firstItem="4pt-d5-Ce7" firstAttribute="top" secondItem="gj0-cI-D4b" secondAttribute="bottom" constant="18" id="R1Y-vR-7h4"/>
+                            <constraint firstItem="gj0-cI-D4b" firstAttribute="top" secondItem="x07-Fs-WZT" secondAttribute="top" constant="6" id="Sns-ja-RfW"/>
+                            <constraint firstItem="4pt-d5-Ce7" firstAttribute="bottom" secondItem="x07-Fs-WZT" secondAttribute="bottom" id="geg-3R-VIE"/>
+                            <constraint firstItem="gj0-cI-D4b" firstAttribute="leading" secondItem="x07-Fs-WZT" secondAttribute="leading" constant="5.5" id="pfB-Qm-L1C"/>
+                            <constraint firstItem="x07-Fs-WZT" firstAttribute="trailing" secondItem="gj0-cI-D4b" secondAttribute="trailing" constant="5.5" id="r3Z-3b-gy9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Assets" image="AssetsIcon" id="gdh-Bf-wYG"/>
+                    <connections>
+                        <outlet property="tableView" destination="4pt-d5-Ce7" id="ELr-Yf-xD0"/>
+                        <outlet property="typeSwitch" destination="gj0-cI-D4b" id="kLR-oZ-uJU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ql2-Rd-lvj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.6376811594205" y="-274.55357142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TFw-d7-2UO">
+            <objects>
+                <tabBarController id="HkR-DM-Wnt" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qaU-fv-GaG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="keb-6K-yPS" kind="relationship" relationship="viewControllers" id="bka-VA-my5"/>
+                        <segue destination="F3r-7i-Jp8" kind="relationship" relationship="viewControllers" id="R3T-n1-fXn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNl-O7-iSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="93"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AssetsIcon" width="24" height="24"/>
+        <image name="WalletsIcon" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

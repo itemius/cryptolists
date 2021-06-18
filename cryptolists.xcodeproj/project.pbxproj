@@ -3,27 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35EDDEB7955574C28BBA8E0E /* Pods_cryptolists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE576659F05DAD717B56FE /* Pods_cryptolists.framework */; };
 		5030CAF5267B864D008F56B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CAF4267B864D008F56B8 /* AppDelegate.swift */; };
 		5030CAF7267B864D008F56B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CAF6267B864D008F56B8 /* SceneDelegate.swift */; };
-		5030CAF9267B864D008F56B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CAF8267B864D008F56B8 /* ViewController.swift */; };
 		5030CAFC267B864D008F56B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5030CAFA267B864D008F56B8 /* Main.storyboard */; };
 		5030CAFE267B864E008F56B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5030CAFD267B864E008F56B8 /* Assets.xcassets */; };
 		5030CB01267B864E008F56B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5030CAFF267B864E008F56B8 /* LaunchScreen.storyboard */; };
+		5030CB0C267B93E0008F56B8 /* AssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CB0B267B93E0008F56B8 /* AssetsViewController.swift */; };
+		5030CB0E267B9402008F56B8 /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CB0D267B9402008F56B8 /* WalletsViewController.swift */; };
+		5030CB10267B99D4008F56B8 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CB0F267B99D4008F56B8 /* Asset.swift */; };
+		5030CB12267B9B6A008F56B8 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CB11267B9B6A008F56B8 /* Wallet.swift */; };
+		5030CB15267B9D26008F56B8 /* Mastrerdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 5030CB14267B9D26008F56B8 /* Mastrerdata.json */; };
+		5030CB19267BCB04008F56B8 /* FiatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CB17267BCB04008F56B8 /* FiatTableViewCell.swift */; };
+		5030CB1A267BCB04008F56B8 /* FiatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5030CB18267BCB04008F56B8 /* FiatTableViewCell.xib */; };
+		5030CB1D267BCFD3008F56B8 /* NonFiatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CB1B267BCFD3008F56B8 /* NonFiatTableViewCell.swift */; };
+		5030CB1E267BCFD3008F56B8 /* NonFiatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5030CB1C267BCFD3008F56B8 /* NonFiatTableViewCell.xib */; };
+		5030CB20267BE804008F56B8 /* SVGImgProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CB1F267BE804008F56B8 /* SVGImgProcessor.swift */; };
+		5030CB22267BEB6A008F56B8 /* JSONDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CB21267BEB6A008F56B8 /* JSONDataService.swift */; };
+		5030CB27267BFFEC008F56B8 /* WalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030CB25267BFFEC008F56B8 /* WalletTableViewCell.swift */; };
+		5030CB28267BFFEC008F56B8 /* WalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5030CB26267BFFEC008F56B8 /* WalletTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		103DB29D49F9E2369D5A9C4F /* Pods-cryptolists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptolists.release.xcconfig"; path = "Target Support Files/Pods-cryptolists/Pods-cryptolists.release.xcconfig"; sourceTree = "<group>"; };
 		5030CAF1267B864D008F56B8 /* cryptolists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptolists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5030CAF4267B864D008F56B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5030CAF6267B864D008F56B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5030CAF8267B864D008F56B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5030CAFB267B864D008F56B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5030CAFD267B864E008F56B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5030CB00267B864E008F56B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5030CB02267B864E008F56B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5030CB0B267B93E0008F56B8 /* AssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewController.swift; sourceTree = "<group>"; };
+		5030CB0D267B9402008F56B8 /* WalletsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
+		5030CB0F267B99D4008F56B8 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		5030CB11267B9B6A008F56B8 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		5030CB14267B9D26008F56B8 /* Mastrerdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mastrerdata.json; sourceTree = "<group>"; };
+		5030CB17267BCB04008F56B8 /* FiatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatTableViewCell.swift; sourceTree = "<group>"; };
+		5030CB18267BCB04008F56B8 /* FiatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiatTableViewCell.xib; sourceTree = "<group>"; };
+		5030CB1B267BCFD3008F56B8 /* NonFiatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonFiatTableViewCell.swift; sourceTree = "<group>"; };
+		5030CB1C267BCFD3008F56B8 /* NonFiatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NonFiatTableViewCell.xib; sourceTree = "<group>"; };
+		5030CB1F267BE804008F56B8 /* SVGImgProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGImgProcessor.swift; sourceTree = "<group>"; };
+		5030CB21267BEB6A008F56B8 /* JSONDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataService.swift; sourceTree = "<group>"; };
+		5030CB25267BFFEC008F56B8 /* WalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTableViewCell.swift; sourceTree = "<group>"; };
+		5030CB26267BFFEC008F56B8 /* WalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletTableViewCell.xib; sourceTree = "<group>"; };
+		B3FE576659F05DAD717B56FE /* Pods_cryptolists.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryptolists.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC85A5D24D85F496B1BFAB64 /* Pods-cryptolists.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptolists.debug.xcconfig"; path = "Target Support Files/Pods-cryptolists/Pods-cryptolists.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35EDDEB7955574C28BBA8E0E /* Pods_cryptolists.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44C3B3CDF512B84D45B0DD28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE576659F05DAD717B56FE /* Pods_cryptolists.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5030CAE8267B864D008F56B8 = {
 			isa = PBXGroup;
 			children = (
 				5030CAF3267B864D008F56B8 /* cryptolists */,
 				5030CAF2267B864D008F56B8 /* Products */,
+				842032E88C2ABB21BE20165F /* Pods */,
+				44C3B3CDF512B84D45B0DD28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +95,68 @@
 		5030CAF3267B864D008F56B8 /* cryptolists */ = {
 			isa = PBXGroup;
 			children = (
+				5030CB16267B9DE0008F56B8 /* service */,
+				5030CB14267B9D26008F56B8 /* Mastrerdata.json */,
+				5030CB0A267B9396008F56B8 /* controller */,
+				5030CB09267B9347008F56B8 /* view */,
+				5030CB08267B933C008F56B8 /* model */,
 				5030CAF4267B864D008F56B8 /* AppDelegate.swift */,
 				5030CAF6267B864D008F56B8 /* SceneDelegate.swift */,
-				5030CAF8267B864D008F56B8 /* ViewController.swift */,
 				5030CAFA267B864D008F56B8 /* Main.storyboard */,
 				5030CAFD267B864E008F56B8 /* Assets.xcassets */,
 				5030CAFF267B864E008F56B8 /* LaunchScreen.storyboard */,
 				5030CB02267B864E008F56B8 /* Info.plist */,
 			);
 			path = cryptolists;
+			sourceTree = "<group>";
+		};
+		5030CB08267B933C008F56B8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5030CB0F267B99D4008F56B8 /* Asset.swift */,
+				5030CB11267B9B6A008F56B8 /* Wallet.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5030CB09267B9347008F56B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5030CB17267BCB04008F56B8 /* FiatTableViewCell.swift */,
+				5030CB18267BCB04008F56B8 /* FiatTableViewCell.xib */,
+				5030CB1B267BCFD3008F56B8 /* NonFiatTableViewCell.swift */,
+				5030CB1C267BCFD3008F56B8 /* NonFiatTableViewCell.xib */,
+				5030CB25267BFFEC008F56B8 /* WalletTableViewCell.swift */,
+				5030CB26267BFFEC008F56B8 /* WalletTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5030CB0A267B9396008F56B8 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				5030CB0B267B93E0008F56B8 /* AssetsViewController.swift */,
+				5030CB0D267B9402008F56B8 /* WalletsViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		5030CB16267B9DE0008F56B8 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				5030CB1F267BE804008F56B8 /* SVGImgProcessor.swift */,
+				5030CB21267BEB6A008F56B8 /* JSONDataService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		842032E88C2ABB21BE20165F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC85A5D24D85F496B1BFAB64 /* Pods-cryptolists.debug.xcconfig */,
+				103DB29D49F9E2369D5A9C4F /* Pods-cryptolists.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5030CB05267B864E008F56B8 /* Build configuration list for PBXNativeTarget "cryptolists" */;
 			buildPhases = (
+				15DA407787DE469939435758 /* [CP] Check Pods Manifest.lock */,
 				5030CAED267B864D008F56B8 /* Sources */,
 				5030CAEE267B864D008F56B8 /* Frameworks */,
 				5030CAEF267B864D008F56B8 /* Resources */,
+				0BDD37DBB4D9217A5CE96810 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,7 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5030CB15267B9D26008F56B8 /* Mastrerdata.json in Resources */,
+				5030CB1E267BCFD3008F56B8 /* NonFiatTableViewCell.xib in Resources */,
+				5030CB1A267BCB04008F56B8 /* FiatTableViewCell.xib in Resources */,
 				5030CB01267B864E008F56B8 /* LaunchScreen.storyboard in Resources */,
+				5030CB28267BFFEC008F56B8 /* WalletTableViewCell.xib in Resources */,
 				5030CAFE267B864E008F56B8 /* Assets.xcassets in Resources */,
 				5030CAFC267B864D008F56B8 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +230,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BDD37DBB4D9217A5CE96810 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cryptolists/Pods-cryptolists-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cryptolists/Pods-cryptolists-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cryptolists/Pods-cryptolists-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15DA407787DE469939435758 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cryptolists-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5030CAED267B864D008F56B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5030CAF9267B864D008F56B8 /* ViewController.swift in Sources */,
+				5030CB12267B9B6A008F56B8 /* Wallet.swift in Sources */,
+				5030CB20267BE804008F56B8 /* SVGImgProcessor.swift in Sources */,
 				5030CAF5267B864D008F56B8 /* AppDelegate.swift in Sources */,
+				5030CB0E267B9402008F56B8 /* WalletsViewController.swift in Sources */,
+				5030CB10267B99D4008F56B8 /* Asset.swift in Sources */,
 				5030CAF7267B864D008F56B8 /* SceneDelegate.swift in Sources */,
+				5030CB19267BCB04008F56B8 /* FiatTableViewCell.swift in Sources */,
+				5030CB27267BFFEC008F56B8 /* WalletTableViewCell.swift in Sources */,
+				5030CB22267BEB6A008F56B8 /* JSONDataService.swift in Sources */,
+				5030CB0C267B93E0008F56B8 /* AssetsViewController.swift in Sources */,
+				5030CB1D267BCFD3008F56B8 /* NonFiatTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +431,14 @@
 		};
 		5030CB06267B864E008F56B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC85A5D24D85F496B1BFAB64 /* Pods-cryptolists.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPMCQ7X6AU;
 				INFOPLIST_FILE = cryptolists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +446,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.frostrabbit.cryptolists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5030CB07267B864E008F56B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103DB29D49F9E2369D5A9C4F /* Pods-cryptolists.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPMCQ7X6AU;
 				INFOPLIST_FILE = cryptolists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.frostrabbit.cryptolists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
