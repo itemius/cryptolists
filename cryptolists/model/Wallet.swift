@@ -18,6 +18,7 @@ struct Wallet {
     var asset: Asset
     var name: String
     var balance: String
+    var balanceEuro: Double
     var isDefault: Bool
     var isDeleted: Bool
 }

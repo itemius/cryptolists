@@ -17,14 +17,20 @@ class WalletsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        wallets = getWallets(getJSON())
-        commodityWallets = getCommodityWallets(getJSON())
-        fiatWallets = getFiatWallets(getJSON())
+        let json = getJSON()
+        wallets = getWallets(json, type: .wallet)
+        wallets.sort {
+            $0.balanceEuro > $1.balanceEuro
+        }
+        commodityWallets = getWallets(json, type: .commodity)
+        commodityWallets.sort {
+            $0.balanceEuro > $1.balanceEuro
+        }
+        fiatWallets = getWallets(json, type: .fiat)
 
         tableView.register(UINib(nibName: "WalletTableViewCell", bundle: nil), forCellReuseIdentifier: "WalletCell")
         tableView.delegate = self
         tableView.dataSource = self
-        // Do any additional setup after loading the view.
     }
     
 
@@ -64,9 +70,9 @@ extension WalletsViewController: UITableViewDelegate, UITableViewDataSource {
             case 0:
                 return "wallets"
             case 1:
-                return "commodityWallets"
+                return "commodity wallets"
             case 2:
-                return "fiatWallets"
+                return "fiat wallets"
             default:
                 return ""
         }

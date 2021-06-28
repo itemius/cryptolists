@@ -17,7 +17,7 @@ struct Asset {
     var id: String
     var type: AssetType
     var icon: String
-    var lightIcon: String
+    var darkIcon: String
     var name: String
     var symbol: String
     var price: String

@@ -35,7 +35,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm0-hV-3pk">
-                        <rect key="frame" x="262" y="11.5" width="42" height="21"/>
+                        <rect key="frame" x="262" y="4" width="42" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Eii-nn-U8R"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="U8F-aE-Wcz"/>
@@ -54,20 +54,33 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etD-rT-OIR">
+                        <rect key="frame" x="262" y="21" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="JK8-KL-P7I"/>
+                            <constraint firstAttribute="height" constant="21" id="u71-vP-XVx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="etD-rT-OIR" secondAttribute="bottom" constant="2" id="13W-fC-xev"/>
                     <constraint firstItem="82A-Op-I1u" firstAttribute="leading" secondItem="XQ1-kZ-3Ui" secondAttribute="trailing" constant="16" id="7IX-yo-SMt"/>
                     <constraint firstAttribute="trailing" secondItem="Jm0-hV-3pk" secondAttribute="trailing" constant="16" id="BSw-Ch-U4c"/>
                     <constraint firstAttribute="bottom" secondItem="82A-Op-I1u" secondAttribute="bottom" constant="2" id="IXt-tp-5r9"/>
                     <constraint firstItem="XQ1-kZ-3Ui" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="LS4-l9-3fh"/>
                     <constraint firstItem="h8S-yd-opf" firstAttribute="leading" secondItem="XQ1-kZ-3Ui" secondAttribute="trailing" constant="16" id="jvh-8s-oV2"/>
+                    <constraint firstAttribute="trailing" secondItem="etD-rT-OIR" secondAttribute="trailing" constant="16" id="lCz-va-T21"/>
                     <constraint firstItem="h8S-yd-opf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="m83-ds-F5Q"/>
+                    <constraint firstItem="Jm0-hV-3pk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="q0H-5C-hvB"/>
                     <constraint firstItem="XQ1-kZ-3Ui" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="s3Z-z5-RlB"/>
-                    <constraint firstItem="Jm0-hV-3pk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="s6I-hd-DQh"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="balanceEuroLabel" destination="etD-rT-OIR" id="c4P-JJ-zTm"/>
                 <outlet property="balanceLabel" destination="Jm0-hV-3pk" id="2Kc-gf-sfh"/>
                 <outlet property="defaultLabel" destination="82A-Op-I1u" id="kTR-Wo-e2b"/>
                 <outlet property="iconImageView" destination="XQ1-kZ-3Ui" id="Xay-n5-7VI"/>

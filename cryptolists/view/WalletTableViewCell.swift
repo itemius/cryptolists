@@ -13,6 +13,7 @@ class WalletTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var defaultLabel: UILabel!
     @IBOutlet weak var balanceLabel: UILabel!
+    @IBOutlet weak var balanceEuroLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,11 +39,28 @@ class WalletTableViewCell: UITableViewCell {
         
         let balance = Double(wallet.balance)!
         let balanceRounded = round(pow(10.0, Double(wallet.asset.precisionCoins))*balance)/pow(10.0, Double(wallet.asset.precisionCoins))
-        
+                
         defaultLabel.isHidden = !wallet.isDefault
 
         balanceLabel.text = balanceRounded.description + " " + wallet.asset.symbol
-        iconImageView.kf.setImage(with: URL(string: darkMode ? wallet.asset.lightIcon : wallet.asset.icon), options: [.processor(SVGImgProcessor())])
+        
+        if wallet.balanceEuro >= 0 {
+            balanceEuroLabel.isHidden = false
+            
+            let currencyFormatter = NumberFormatter()
+            currencyFormatter.usesGroupingSeparator = true
+            currencyFormatter.numberStyle = .currency
+            currencyFormatter.currencyCode = "eur"
+            currencyFormatter.locale = Locale.current
+            currencyFormatter.maximumFractionDigits = 2
+            
+            let priceString = currencyFormatter.string(from: NSNumber(value: wallet.balanceEuro))!
+            balanceEuroLabel.text = priceString
+        } else {
+            balanceEuroLabel.isHidden = true
+        }
+
+        iconImageView.kf.setImage(with: URL(string: darkMode ? wallet.asset.darkIcon : wallet.asset.icon), options: [.processor(SVGImgProcessor())])
     }
     
 }

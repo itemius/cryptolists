@@ -49,9 +49,10 @@ class AssetsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        cryptocoins = getCryptocoins(getJSON())
-        commodities = getCommodities(getJSON())
-        fiats = getFiats(getJSON())
+        let json = getJSON()
+        cryptocoins = getAssets(json, type: .cryptocoin)
+        commodities = getAssets(json, type: .commodity)
+        fiats = getAssets(json, type: .fiat)
 
         tableView.reloadData()
     }

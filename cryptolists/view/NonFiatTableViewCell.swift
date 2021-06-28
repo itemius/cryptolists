@@ -44,6 +44,6 @@ class NonFiatTableViewCell: UITableViewCell {
         let priceString = currencyFormatter.string(from: NSNumber(value: priceRounded))!
         priceLabel.text = priceString
 
-        iconImageView.kf.setImage(with: URL(string: darkMode ? asset.lightIcon : asset.icon), options: [.processor(SVGImgProcessor())])
+        iconImageView.kf.setImage(with: URL(string: darkMode ? asset.darkIcon : asset.icon), options: [.processor(SVGImgProcessor())])
     }
 }

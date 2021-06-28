@@ -29,7 +29,7 @@ class FiatTableViewCell: UITableViewCell {
     
     func updateAsset(_ asset: Asset, darkMode: Bool) {
         nameLabel.text = asset.name + " (" + asset.symbol + ")"
-        iconImageView.kf.setImage(with: URL(string: darkMode ? asset.lightIcon : asset.icon ), options: [.processor(SVGImgProcessor())])
+        iconImageView.kf.setImage(with: URL(string: darkMode ? asset.darkIcon : asset.icon ), options: [.processor(SVGImgProcessor())])
     }
     
 }
